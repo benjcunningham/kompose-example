@@ -1,15 +1,22 @@
-.PHONY: install run stop quality style
+.PHONY: install clean build deploy quality style
 
 check_dirs := backend frontend
 
 install:
 	pip install -e ".[quality]"
+	pip install python-dotenv
 
-run:
-	docker-compose up --build
+clean:
+	rm -rf deploy || true
+	mkdir deploy
 
-stop:
-	docker-compose down
+build:
+	docker-compose build
+	docker-compose push
+
+deploy: clean build
+	dotenv -f .env run kompose convert -o deploy
+	kubectl apply -f deploy --namespace kompose-example
 
 quality:
 	black --check $(check_dirs)
