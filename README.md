@@ -7,7 +7,7 @@ Compose and moved to Kubernetes with `kompose`. Built as a weekend hack to
 experiment with quick-and-dirty development patterns for
 [Kompose](https://kompose.io/) and [k3d](https://k3d.io/).
 
-🤔 __Why?__ Because as a data scientist, I build a lot of machine learning
+> 🤔 __Why?__ Because as a data scientist, I build a lot of machine learning
 products but don't always get to be hands-on with the "real" Kubernetes
 clusters. I want to understand as much of my team's stack as possible, and
 Kompose seems like a good way to bridge that gap between something I'm already
