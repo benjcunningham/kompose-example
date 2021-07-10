@@ -80,9 +80,7 @@ Then access the page at <localhost:12345>.
 
 ## Makefile Reference
 
-```bash
-# Makefile
-
+```
 Usage:
   make [command]
 
