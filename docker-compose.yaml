@@ -3,6 +3,7 @@ services:
   frontend:
     depends_on:
     - "backend"
+    image: "${REGISTRY}/kompose-example/frontend:latest"
     build:
       context: "."
       dockerfile: "docker/frontend/Dockerfile"
@@ -11,6 +12,7 @@ services:
     ports:
     - "80:80"
   backend:
+    image: "${REGISTRY}/kompose-example/backend:latest"
     build:
       context: "."
       dockerfile: "docker/backend/Dockerfile"
