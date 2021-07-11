@@ -2,6 +2,12 @@
   ☸️ kompose-example
 </h1>
 
+<p align="center">
+  <a href="https://github.com/benjcunningham/kompose-example/actions/workflows/tests.yaml">
+    <img alt=tests"" src="https://github.com/benjcunningham/kompose-example/actions/workflows/tests.yaml/badge.svg">
+  </a>
+</p>
+
 An example of a small, multi-container web application developed with Docker
 Compose and moved to Kubernetes with `kompose`. Built as a weekend hack to
 experiment with quick-and-dirty development patterns for
