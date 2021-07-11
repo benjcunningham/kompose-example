@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/benjcunningham/kompose-example/actions/workflows/tests.yaml">
-    <img alt=tests"" src="https://github.com/benjcunningham/kompose-example/actions/workflows/tests.yaml/badge.svg">
+    <img alt="tests" src="https://github.com/benjcunningham/kompose-example/actions/workflows/tests.yaml/badge.svg">
   </a>
 </p>
 
